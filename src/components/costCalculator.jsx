@@ -1,64 +1,45 @@
-import React from 'react'
-import ContactCarousal from './carousal copy'
-import { useState } from 'react'
-import { useRef } from 'react'
-import ErrorModal from './errorModal'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import ContactCarousal from './carousal copy';
+import ErrorModal from './errorModal';
+
 const CostCalculator = () => {
     const navigate = useNavigate();
-    const [specs, setSpecs] = useState({})
-  
-    const changeClass = (element) => {
-        const buttons = document.getElementsByClassName(`${element}`)
-        for (let index = 0; index < buttons.length; index++) {
-            const e = buttons[index];
-            if (specs) {
-
-                if (specs[element].value == e.innerHTML) {
-                    e.className = `${e.className} selectedbutton`
-                }
-                else {
-                    e.className = `${element} btn btn-outline-light rounded-3 mx-2`
-                }
-
-            }
-        }
-    }
-    const changeTheClass = () => {
-
-        if (specs) {
-            Object.keys(specs).map((e) => { changeClass(e) })
-
-        }
-
-    }
-
-
-    const [toggleModal, settoggleModal] = useState(false)
+    const [specs, setSpecs] = useState({});
+    const [toggleModal, settoggleModal] = useState(false);
     const modalref = useRef(null);
 
-    const totalCost = () => {
+    useEffect(() => {
+        const changeClass = (element) => {
+            const buttons = document.getElementsByClassName(`${element}`);
+            for (let index = 0; index < buttons.length; index++) {
+                const e = buttons[index];
+                if (specs[element] && specs[element].value === e.innerHTML) {
+                    e.className = `${e.className} selectedbutton`;
+                } else {
+                    e.className = `${element} btn btn-outline-light rounded-3 mx-2`;
+                }
+            }
+        };
 
-        const nums = Object.values(specs).map((e) => { return e.price })
-        if (nums.length == 8) {
-            const sum = nums.reduce((accumulator, currentValue) => accumulator + currentValue);
-            localStorage.setItem('specs', JSON.stringify(specs))
-            localStorage.setItem('subtotal',sum)
-            window.scrollTo({ behavior: 'smooth', top: 0, left: 0 })
-            navigate("/estimated-cost")
- 
-        } else {
-            settoggleModal(true)
-         
-            modalref.current.click()
+        if (specs) {
+            Object.keys(specs).forEach(changeClass);
         }
+    }, [specs]);
 
-
-    }
-    changeTheClass()
-
-
-
+    const totalCost = () => {
+        const nums = Object.values(specs).map(e => e.price);
+        if (nums.length === 8) {
+            const sum = nums.reduce((acc, curr) => acc + curr, 0);
+            localStorage.setItem('specs', JSON.stringify(specs));
+            localStorage.setItem('subtotal', sum);
+            window.scrollTo({ behavior: 'smooth', top: 0, left: 0 });
+            navigate("/estimated-cost");
+        } else {
+            settoggleModal(true);
+            modalref.current.click();
+        }
+    };
 
     return (
         <>
