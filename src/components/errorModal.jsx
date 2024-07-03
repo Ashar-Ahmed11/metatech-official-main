@@ -4,7 +4,7 @@ const ErrorModal = ({settoggleModal}) => {
     return (
         <>
 
-
+<div>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -21,6 +21,7 @@ const ErrorModal = ({settoggleModal}) => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

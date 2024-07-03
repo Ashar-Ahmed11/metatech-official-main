@@ -11,7 +11,7 @@ import EstimatedCost from './components/estimatedcost'
 const App = () => {
   console.clear()
   return (
-    <>
+    <div>
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -23,7 +23,7 @@ const App = () => {
       <Footer/>
 
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
