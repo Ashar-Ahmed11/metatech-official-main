@@ -2,6 +2,7 @@ import React from 'react'
 import ContactCarousal from './carousal copy'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import MetaDecorator from './metadecorator'
 const ContactUs = () => {
 
     const [formData, setformData] = useState({ name: '', email: '', subject: '', phone: '', message: '', country: '' })
@@ -47,6 +48,7 @@ const ContactUs = () => {
 
     return (
         <>
+    <MetaDecorator title={"Contact Us"} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/upload/v1720099375/silhlgsrj9ehcuq3gm4h.png"} description={'Metatech is Leading Web & App development company that empowers businesses to thrive in the digital world'} />
 
             <ContactCarousal pageTitle={"Contact Us"} />
             <div style={{ backgroundColor: '#151619' }}>
@@ -129,7 +131,7 @@ const ContactUs = () => {
                                         </div>}
                                     </button>
                                 </div>
-                          {formSubmitted&&<h4 className="display-6 text-success">Thanks for sending us a proposal, our subordinate will get back to you shortly for your further queries!</h4>}
+                          {formSubmitted&&  <h4 className="display-6 text-success">Thanks for sending us a proposal, our subordinate will get back to you shortly for your further queries!</h4>}
 
                             </form>
                         </div>

@@ -68,8 +68,12 @@ const EstimatedCost = () => {
                         <div className=" py-5">
                     <h4 className='pb-3' style={{ textDecoration: 'underline', textUnderlineOffset: "6px", color: '#6565ff' }}>Project Quotation Calculator</h4>
 
-                            <h4 style={{ color: "white" }} className="display-5">We estimate that your project will cost between <b>${sum} </b>and <b>${sum+1000}</b>. To receive an exact quote from a WebFX website design strategist, please complete the web form below.</h4>
+                            <h4 style={{ color: "white" }} className="display-5">We estimate that your project will cost between <b>${sum} </b>and <b>${sum+1000}</b>.</h4>
+                            <h1 style={{ color: "white" }} className="h3">
+                            To receive an exact quote from Metatech website design strategist, please complete the web form below.
 
+
+                            </h1>
 
                         </div>
                       

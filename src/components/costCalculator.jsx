@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRef } from 'react'
 import ErrorModal from './errorModal'
 import { useNavigate } from 'react-router-dom'
+import MetaDecorator from './metadecorator'
 const CostCalculator = () => {
     const navigate = useNavigate();
     const [specs, setSpecs] = useState({})
@@ -63,6 +64,7 @@ const CostCalculator = () => {
     return (
         <>
             <div>
+                <MetaDecorator title={"Web Page Cost Calculator"} description={"Free web page cost calculator, get the best estimate quotes for your website"} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://res.cloudinary.com/dextrzp2q/image/upload/v1720097625/ob14j2kfdbjqq5te5tbn.png"}/>
                 <ContactCarousal pageTitle={"Website Cost Calculator"} />
                 <ErrorModal settoggleModal={settoggleModal} />
                 <button ref={modalref} type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -71,8 +73,10 @@ const CostCalculator = () => {
 
                 <div style={{ backgroundColor: '#151619' }}>
                     <div className="container py-5">
-                        <h5 className='pb-3' style={{ textDecoration: 'underline', textUnderlineOffset: "6px", color: '#6565ff' }}>Website Cost Calculator</h5>
-                        <h4 style={{ color: "white" }} className="display-4">Get The Best Quotes For Your Website.</h4>
+                        <h1 className='pb-3 h5' style={{ textDecoration: 'underline', textUnderlineOffset: "6px", color: '#6565ff' }}>Website Cost Calculator</h1>
+                        <h3 style={{ color: "white" }} className="display-4">Get The Best Quotes For Your Website.</h3>
+                        <h2 style={{ color: "white" }} className="lead">Our Website Cost Calculator provides accurate expense estimates for web projects. Use the Web Page Cost Calculator, Web Design Calculator, or Ecommerce Website Cost Calculator for tailored insights. Perfect for budgeting and planning, our Website Cost Estimator meets all your needs.</h2>
+
 
                         <div style={{ color: 'white' }}>
                             <div className="py-2">
