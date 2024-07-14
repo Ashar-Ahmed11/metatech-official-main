@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import ErrorModal from './errorModal'
 import { useNavigate } from 'react-router-dom'
 import MetaDecorator from './metadecorator'
-const CostCalculator = () => {
+const CostCalculator = ({title,description}) => {
     const navigate = useNavigate();
     const [specs, setSpecs] = useState({})
 
@@ -64,8 +64,8 @@ const CostCalculator = () => {
     return (
         <>
             <div>
-                <MetaDecorator title={"Web Page Cost Calculator"} description={"Free web page cost calculator, get the best estimate quotes for your website"} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://res.cloudinary.com/dextrzp2q/image/upload/v1720097625/ob14j2kfdbjqq5te5tbn.png"}/>
-                <ContactCarousal pageTitle={"Website Cost Calculator"} />
+                <MetaDecorator title={title} description={description} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://res.cloudinary.com/dextrzp2q/image/upload/v1720097625/ob14j2kfdbjqq5te5tbn.png"}/>
+                <ContactCarousal pageTitle={title} />
                 <ErrorModal settoggleModal={settoggleModal} />
                 <button ref={modalref} type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Launch demo modal
