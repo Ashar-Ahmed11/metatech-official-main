@@ -8,6 +8,8 @@ const MetaDecorator = ({ title, description,imageUrl  }) => (
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={imageUrl} />
+    <link rel="canonical" href={"https://metatech-official.co"+ window.location.pathname} />
+
     <meta
       property="og:url"
       content={"https://metatech-official.co"+ window.location.pathname}
