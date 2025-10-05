@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation'
 const BrandDevelopment = () => {
   return (
     <div>
-        <div id="brand-development" className="text-center py-5">
+        <div id="brand-development" className="text-center pb-5">
   <h2
     className="h5 pb-2"
     style={{
@@ -49,10 +49,9 @@ const BrandDevelopment = () => {
   >
     {" "}
     <h2 className="h4 text-light">
-      We can amplify your startup's story across Facebook, Instagram, Twitter,
-      and beyond.
+    We can spread the narrative of your startup around Facebook, Instagram, Twitter, and elsewhere.
       <br />
-      Your brand's digital destiny awaits
+      The digital future of your brand is waiting.
       <br />
       Let's make it shine!
     </h2>
@@ -75,15 +74,13 @@ const BrandDevelopment = () => {
             className="card-img-top"
             alt="An interactive poster of Metatech Instagram marketing service"
           />
-          <div className="card-body justify-content-end d-flex flex-column">
+          <div className="card-body justify-content-start d-flex flex-column">
             <h2 className="card-title h5">
-              Maximize Your Instagram Presence for Optimal Engagement
+            Optimize Your Instagram Profile for Best Engagement
             </h2>
             <p className="card-text">
-              Unlock the potential of Instagram with our tailored strategies.
-              We'll curate captivating content, engage your audience, and
-              harness trending hashtags to enhance your brand's visibility and
-              connection.
+            With our customized plans, release Instagram's potential.
+            We will create interesting material, involve your audience, and leverage popular hashtags to improve the visibility and connection of your brand.
             </p>
           </div>
         </div>
@@ -104,16 +101,12 @@ const BrandDevelopment = () => {
             className="card-img-top"
             alt="An interactive poster of Metatech Facebook marketing service"
           />
-          <div className="card-body justify-content-end d-flex flex-column">
+          <div className="card-body justify-content-start d-flex flex-column">
             <h2 className="card-title h5">
-              Optimize Your Facebook Presence: Unleash the Power of Social Media
-              Marketing
+            Improve Your Facebook Profile: Release Social Media Marketing Power
             </h2>
             <p className="card-text">
-              Navigate the Facebook landscape with finesse. Our team will
-              optimize your page, craft shareable posts, and run targeted ad
-              campaigns, ensuring your brand's message reaches the right
-              audience at the right time.
+            Move across Facebook with grace. Our staff will run focused ad campaigns, create shareable posts, and maximize your page to make sure the message of your brand reaches the correct audience at the correct moment.
             </p>
           </div>
         </div>
@@ -134,15 +127,12 @@ const BrandDevelopment = () => {
             className="card-img-top"
             alt="An interactive poster of Metatech Twitter marketing service"
           />
-          <div className="card-body justify-content-end d-flex flex-column">
+          <div className="card-body justify-content-start d-flex flex-column">
             <h2 className="card-title h5">
-              Strategize for Twitter Success: Enhance Your Online Presence with
-              Our Agency
+            Plan for Twitter success by improving your online profile with our agency.
             </h2>
             <p className="card-text">
-              We'll help you master Twitter's fast-paced environment by crafting
-              concise, impactful tweets, fostering real-time conversations, and
-              building a follower base that's as engaged as it is enthusiastic.
+            By creating concise, powerful tweets, encouraging real-time conversations, and assembling a follower base as active as it is passionate, we will help you become master of Twitter's fast-paced environment.
             </p>
           </div>
         </div>
@@ -165,14 +155,10 @@ const BrandDevelopment = () => {
           />
           <div className=" card-body  d-flex flex-column">
             <h2 className="card-title h5">
-              LinkedIn Presence Transformation: Expert Strategies for
-              Professional Branding
+            LinkedIn Presence Development: Expert Strategies for Professional Branding
             </h2>
             <p className="card-text">
-              Forge valuable connections on the world's premier professional
-              network. Our strategies encompass thought leadership content,
-              network expansion, and industry-specific engagement, elevating
-              your brand's reputation and influence.
+            Create great relationships on the leading professional network worldwide. Our approaches cover industry-specific engagement, thought leadership material, and network development, so enhancing the reputation and impact of your brand.
             </p>
           </div>
         </div>
@@ -193,16 +179,12 @@ const BrandDevelopment = () => {
             className="card-img-top"
             alt="An interactive poster of Metatech Search Engine Optimization Services"
           />
-          <div className="card-body justify-content-end d-flex flex-column">
+          <div className="card-body justify-content-start d-flex flex-column">
             <h2 className="card-title h5">
-              Elevate Your Online Visibility: Strengthen Your Website's Presence
-              with Our Proven Techniques
+            Improve the presence of your website using our tested strategies.
             </h2>
             <p className="card-text">
-              In today's digital age, your website serves as the virtual front
-              door to your business. Make a lasting impression and stand out
-              amidst the vast online landscape with our comprehensive website
-              presence boosting strategies.
+            Your website is the digital front door to your company in the modern era. With our complete website presence enhancing techniques, make a lasting impression and stand out among the large internet terrain.
             </p>
           </div>
         </div>
@@ -225,14 +207,10 @@ const BrandDevelopment = () => {
           />
           <div className=" card-body  d-flex flex-column">
             <h2 className="card-title h5">
-              Amplify Your Business Reach: Elevate Your WhatsApp Presence with
-              Our Strategic Approach
+            Increase Your Business Reach: Improve Your WhatsApp Profile using Our Strategic Approach
             </h2>
             <p className="card-text">
-              In the era of instant communication, WhatsApp has emerged as a
-              powerful tool for connecting with customers and fostering
-              meaningful interactions. Unlock the true potential of WhatsApp
-              with our comprehensive presence boosting strategies.
+            WhatsApp has become a great tool for reaching consumers and encouraging meaningful interactions in the age of fast communication. Using our all-encompassing presence boosting techniques will help you to fully utilize WhatsApp.
             </p>
           </div>
         </div>

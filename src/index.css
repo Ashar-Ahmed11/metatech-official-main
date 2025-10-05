@@ -16,7 +16,9 @@ code {
   color:white
 }
 
-
+#root{
+  overflow-x: hidden;
+}
 
 .zoom-out {
   perspective: 1000px;

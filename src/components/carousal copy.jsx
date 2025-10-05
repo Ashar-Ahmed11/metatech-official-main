@@ -26,7 +26,7 @@ const ContactCarousal = ({pageTitle}) => {
     return (
         <>
             <div id="carouselExampleCaptions" class="carousel slide">
-
+            {/* https://res.cloudinary.com/dextrzp2q/video/fetch/c_scale/q_60/https://res.cloudinary.com/dextrzp2q/video/upload/v1738362738/xp7pv4rw6tjhlosxnysq.mp4 */}
                 <div class="carousel-inner">
                     <div style={{backgroundImage:`url(${images[0].img})`}} class="carousel-item active">
                         {images.map((e,i)=>{

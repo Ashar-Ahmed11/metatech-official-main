@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Footer() {
     return (
         <div id='footer'>
@@ -7,17 +7,34 @@ export default function Footer() {
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
-                            <h2 className='h6'>About</h2>
+                            <h2 className='h6 text-light'>ABOUT</h2>
                             <p class="text-justify">
-                            At Metatech, we are a passionate team of professionals dedicated to delivering top-notch website and app development and design services. Our skilled developers work tirelessly to create cutting-edge websites and user-friendly apps that cater to your specific needs, ensuring a seamless online presence for your business.
+                            The passionate Metatech team makes stunning websites and apps. Our talented developers build dynamic websites and user-friendly apps for your business.Our SEO services improve your website's visibility and rankings in addition to development. Digital marketing boosts business growth by increasing brand awareness, organic traffic, and meaningful leads. Metatech specializes in web, app, design, SEO, and digital marketing. Consult for free!
+
                             </p>
-In addition to our development expertise, we offer result-driven SEO services that will boost your website's visibility and improve search engine rankings. Our digital marketing solutions are tailored to expand your brand's reach, drive organic traffic, and generate meaningful leads, ensuring business growth and success.
-<p className="text-justify">
-With a customer-centric approach, we take the time to understand your goals and objectives, and then implement strategies that deliver exceptional results. Whether you are a startup, small business, or a large enterprise, we have the tools and expertise to elevate your online presence and take your business to new heights.
-</p>
-<p className="text-justify">
-Experience excellence in web and app development, design, SEO, and digital marketing with Metatech. Contact us today for a free consultation!
-                            </p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <h2 className='h6 text-light'>QUICK LINKS</h2>
+                           
+                            <ul class="footer-links">
+                                <li><Link onClick={()=>{window.scrollTo({ behavior: 'smooth', top: 0, left: 0,behavior:"instant" })}}  to="/">Home</Link></li>
+                                <li><Link onClick={()=>{window.scrollTo({ behavior: 'smooth', top: 0, left: 0,behavior:"instant" })}} to="/website-development">Website Development</Link></li>
+                                <li><Link onClick={()=>{window.scrollTo({ behavior: 'smooth', top: 0, left: 0,behavior:"instant" })}} to="/seo">Search Engine Optimization</Link></li>
+                                <li><Link onClick={()=>{window.scrollTo({ behavior: 'smooth', top: 0, left: 0,behavior:"instant" })}} to="/ppc-management-packages">Google Ads PPC</Link></li>
+                                <li><Link onClick={()=>{window.scrollTo({ behavior: 'smooth', top: 0, left: 0,behavior:"instant" })}} to="/contact">Contact Us</Link></li>
+                            </ul>
+
+                       
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <h2 className='h6 text-light'>GET IN TOUCH</h2>
+                            <ul class="footer-links">
+                                {/* <li onClick={()=>{window.scrollTo({ behavior: 'smooth', top: 0, left: 0,behavior:"instant" })}}  >Home</li> */}
+                                <li>Phone: <a  href={`tel:+92-347-2698189`}>+92-347-2698189</a></li>
+                                <li>Phone: <a  href={`tel:+92-336-3374624`}>+92-336-3364624</a></li>
+                                {/* <li>Landline: <a  href={`tel:+92-51-8736204`}>+92-51-8736204</a></li> */}
+                                
+                            </ul>
                         </div>
 
                        
@@ -27,7 +44,7 @@ Experience excellence in web and app development, design, SEO, and digital marke
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-sm-6 col-xs-12">
-                            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                            <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
                                 <span href="#" className='mx-1'>Metatech</span>
                             </p>
                             <p class="copyright-text">Site developed by: <a href='/Metatech.pdf' target="_blank" download> Metatech <span className='d-none'>Metatech-PDF</span></a>

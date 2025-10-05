@@ -5,6 +5,10 @@ import TripPreview from './tripagain.PNG'
 import EstellasPreview from './estellaspreview.PNG'
 import MetachatPreview from './metachatpreview.PNG'
 import CloudbookPreview from './cloudbook.png'
+import loanFunding from './fundingwebsite.png'
+import loanFoundation from './loanfoundation.png'
+import stakingFocusedToken from './sftpreview.png'
+import vertexChain from './vertexpreview.png'
 import { useKeenSlider } from "keen-slider/react"
 
 import "keen-slider/keen-slider.min.css"
@@ -14,28 +18,43 @@ import MutationPlugin from './mutationPlugin'
 const Projects = () => {
 
   const images = [
-    {url:MetachatPreview,link:'https://metachatt.web.app/'},
-    {url:MoabPreview,link:'https://moab-386be.web.app/'},
-    {url:NukhbaPreview,link:'https://nukhba.shop/'},
-    {url:TripPreview,link:'https://trip-00.web.app/'},
-    {url:EstellasPreview,link:'https://estellas-v1.web.app/'},
-    {url:CloudbookPreview,link:'https://cloudbo0k.web.app/'},
+    { url: NukhbaPreview, link: 'https://nukhba-2.web.app/' },
+    { url: MoabPreview, link: 'https://moab-386be.web.app/' },
+    { url: TripPreview, link: 'https://trip-00.web.app/' },
+    { url: EstellasPreview, link: 'https://estellas-v1.web.app/' },
+    { url: CloudbookPreview, link: 'https://cloudbo0k.web.app/' },
+  
+    { url: stakingFocusedToken, link: 'https://www.sft.com.pk/' },
+    { url: vertexChain, link: 'https://vertexchain.world/' },
+    { url: MetachatPreview, link: 'https://metachatt.web.app/' }
     // "https://images.unsplash.com/photo-1590005176489-db2e714711fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80",
   ]
 
   const [details, setDetails] = React.useState(null)
   const [currentSlide, setCurrentSlide] = React.useState(0)
   const [loaded, setLoaded] = useState(false)
+  const animation = { duration: 50000, easing: (t) => t }
+
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     detailsChanged(s) {
       setDetails(s.track.details)
     },
-    initial: 2,
+    created(s) {
+      s.moveToIdx(5, true, animation)
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation)
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation)
+    },
+    initial: 0,
+    
     slides: {
       origin: 'center',
       perView: window.innerWidth < 750 ? 1 : 2,
-
+spacing:30
 
     },
     slideChanged(slider) {
@@ -44,22 +63,22 @@ const Projects = () => {
     created() {
       setLoaded(true)
     },
-  },[ResizePlugin,MutationPlugin])
+  }, [ResizePlugin, MutationPlugin])
 
 
 
-  function scaleStyle(idx) {
-    if (!details) return {}
-    const slide = details.slides[idx]
-    const scale_size = 0.7
-    const scale = 1 - (scale_size - scale_size * slide.portion)
-    return {
-      transform: `scale(${scale})`,
-      WebkitTransform: `scale(${scale})`,
-    }
+  // function scaleStyle(idx) {
+  //   if (!details) return {}
+  //   const slide = details.slides[idx]
+  //   const scale_size = 0.7
+  //   const scale = 1 - (scale_size - scale_size * slide.portion)
+    // return {
+  //     transform: `scale(${scale})`,
+  //     WebkitTransform: `scale(${scale})`,
+  //   }
 
 
-  }
+  // }
 
   const [containerHeight, setcontainerHeight] = useState(null)
 
@@ -94,15 +113,16 @@ const Projects = () => {
                         </div>
                     </div>
                 </div> */}
-        <div ref={sliderRef} className="keen-slider zoom-out">
+        <div ref={sliderRef} className="keen-slider">
           {images.map((src, idx) => (
-            <div key={idx} style={{ height: containerHeight ? containerHeight : 'auto' }} className="keen-slider__slide zoom-out__slide">
-              <div style={scaleStyle(idx)}>
-                <img alt="An interactive image for the preview of our one of the most recent portfolio website." onLoad={(e) => setcontainerHeight(e.target.clientHeight)} src={src.url} />
+            <a href={src.link} target='_blank' key={idx} style={{ height: containerHeight ? containerHeight : 'auto' }} className="keen-slider__slide zoom-out__slide">
+              <div>
+                {/* https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://metatech-official.co/${src.url} */}
+                <img alt="An interactive image for the preview of our one of the most recent portfolio website." onLoad={(e) => setcontainerHeight(e.target.clientHeight)} src={`https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://metatech-official.co/${src.url}`} />
               </div>
-            </div>
+            </a>
           ))}
-          {loaded && instanceRef.current && (
+          {/* {loaded && instanceRef.current && (
             <>
               <Arrow
                 left
@@ -122,11 +142,9 @@ const Projects = () => {
                 }
               />
             </>
-          )}
+          )} */}
         </div>
-        <div className="d-flex justify-content-center">
-          <a href={images[currentSlide].link} target='_blank' className="btn btn-primary my-2">Preview</a>
-        </div>
+    
 
       </div>
     </>

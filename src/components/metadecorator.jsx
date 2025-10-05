@@ -1,13 +1,13 @@
 import { Helmet } from "react-helmet";
 
 
-const MetaDecorator = ({ title, description,imageUrl  }) => (
+const MetaDecorator = ({ title, description,imageUrl,showBrand  }) => (
   <Helmet>
-    <title>{title}</title>
+    <title>{`${title}${showBrand?" - Metatech Official":''}`}</title>
     <meta property="og:title" content={title} />
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={imageUrl} />
+    {/* <meta property="og:image" content={imageUrl} /> */}
     <link rel="canonical" href={"https://metatech-official.co"+ window.location.pathname} />
 
     <meta

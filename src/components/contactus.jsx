@@ -3,6 +3,7 @@ import ContactCarousal from './carousal copy'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import MetaDecorator from './metadecorator'
+import VideoCarousal from './carousal copy 2'
 const ContactUs = () => {
 
     const [formData, setformData] = useState({ name: '', email: '', subject: '', phone: '', message: '', country: '' })
@@ -49,8 +50,11 @@ const ContactUs = () => {
     return (
         <>
     <MetaDecorator title={"Contact Us"} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/upload/v1720099375/silhlgsrj9ehcuq3gm4h.png"} description={'Metatech is Leading Web & App development company that empowers businesses to thrive in the digital world'} />
-
+    {/* https://res.cloudinary.com/dextrzp2q/video/fetch/c_scale/q_60/https://res.cloudinary.com/dextrzp2q/video/upload/v1738362738/xp7pv4rw6tjhlosxnysq.mp4 */}
+    {/* https://res.cloudinary.com/dextrzp2q/video/upload/v1738882301/cqgsshvvkoje2cl4eji7.webm */}
+    {/* https://res.cloudinary.com/dextrzp2q/video/upload/v1738882308/qr2s7esrzeowyyueijz3.webm */}
             <ContactCarousal pageTitle={"Contact Us"} />
+            {/* <VideoCarousal pageTitle={"Website Development"} videoURL={`https://res.cloudinary.com/dextrzp2q/video/fetch/c_scale/f_auto/q_60/https://res.cloudinary.com/dextrzp2q/video/upload/v1738883551/tyvkehjuvi0btrw6vkmf.mp4`} /> */}
             <div style={{ backgroundColor: '#151619' }}>
                 <div className="container py-5">
                     <h5 className='pb-3' style={{ textDecoration: 'underline', textUnderlineOffset: "6px", color: '#6565ff' }}>GET IN TOUCH</h5>
@@ -59,7 +63,7 @@ const ContactUs = () => {
                         <div className="col-lg-4 my-2 col-12 col-sm-6">
                             <div class="card h-100 text-center py-4" style={{ backgroundColor: 'rgba(0,0,0,0)', borderColor: '#6565ff' }}>
                                 <p className="h1 display-5 py-4">
-                                    <i style={{ color: "#6565ff" }} class="fas fa-map-marker-alt fa-2xl"></i>
+                                    <i style={{ color: "#6565ff" }} class="fa fa-map-marker fa-2x"></i>
                                 </p>
                                 <div class="card-body d-flex flex-column">
                                     <h5 style={{ color: "#6565ff" }} class="card-title display-5 fw-normal">LOCATION</h5>
@@ -74,7 +78,7 @@ const ContactUs = () => {
                             <div class="card h-100 text-center py-4" style={{ backgroundColor: 'rgba(0,0,0,0)', borderColor: '#6565ff' }}>
                                 <p className="h1 display-5 py-4">
 
-                                    <i style={{ color: "#6565ff" }} class="fas fa-phone-alt fa-2xl"></i>
+                                    <i style={{ color: "#6565ff" }} class="fa fa-phone fa-2x"></i>
                                 </p>
                                 <div class="card-body d-flex flex-column">
                                     <h5 style={{ color: "#6565ff" }} class="card-title display-5 fw-normal">PHONE</h5>
@@ -89,12 +93,12 @@ const ContactUs = () => {
                         <div className="col-lg-4 my-2 col-12 col-sm-6">
                             <div class="card h-100 text-center py-4" style={{ backgroundColor: 'rgba(0,0,0,0)', borderColor: '#6565ff' }}>
                                 <p className="h1 display-5 py-4">
-                                    <i style={{ color: "#6565ff" }} class="fas fa-map-marker-alt fa-2xl"></i>
+                                    <i style={{ color: "#6565ff" }} class="fa fa-envelope fa-2x"></i>
                                 </p>
                                 <div class="card-body d-flex flex-column">
                                     <h5 style={{ color: "#6565ff" }} class="card-title display-5 fw-normal">EMAIL</h5>
                                     <div style={{ flex: 1 }} className='d-flex flex-column justify-content-center'>
-                                        <h6 style={{ color: "#ffffff" }} class="card-text fw-normal"><a href="mailto:info@metatech-official.co" target='_blank'> info@metatech-official.co</a></h6>
+                                        <h6 style={{ color: "#ffffff" }} class="card-text fw-normal"><a href="mailto:info@metatech-official.com" target='_blank'> info@metatech-official.com</a></h6>
 
                                     </div>
                                 </div>
