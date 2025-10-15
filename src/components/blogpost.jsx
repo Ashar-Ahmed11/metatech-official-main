@@ -59,7 +59,7 @@ const BlogPost = () => {
     return (
 
         <div style={{ backgroundColor: '#151619' }}>
-                <MetaDecorator showBrand={false} title={'Why Consider Metatech Official for White Label SEO Services?'} description={'Seeking a reliable digital marketing company for SEO optimization, online marketing, website design, PPC management, Social Media, USA, UK, Australia, UAE.'} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://res.cloudinary.com/dextrzp2q/image/upload/v1720097625/ob14j2kfdbjqq5te5tbn.png"} />
+            <MetaDecorator showBrand={false} title={'Why Consider Metatech Official for White Label SEO Services?'} description={'Seeking a reliable digital marketing company for SEO optimization, online marketing, website design, PPC management, Social Media, USA, UK, Australia, UAE.'} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://res.cloudinary.com/dextrzp2q/image/upload/v1720097625/ob14j2kfdbjqq5te5tbn.png"} />
 
             <div className="container">
                 <div className="py-5">

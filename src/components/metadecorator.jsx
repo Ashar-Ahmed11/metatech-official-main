@@ -8,11 +8,11 @@ const MetaDecorator = ({ title, description,imageUrl,showBrand  }) => (
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
     {/* <meta property="og:image" content={imageUrl} /> */}
-    <link rel="canonical" href={"https://metatech-official.co"+ window.location.pathname} />
+    <link rel="canonical" href={"https://metatech-official.com"+ window.location.pathname} />
 
     <meta
       property="og:url"
-      content={"https://metatech-official.co"+ window.location.pathname}
+      content={"https://metatech-official.com"+ window.location.pathname}
     />
     <meta name="twitter:card" content={title} />
     <meta name="twitter:image:alt" content={title} />

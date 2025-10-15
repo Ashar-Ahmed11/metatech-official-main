@@ -23,6 +23,7 @@ import BerkshireSEOB3 from './components/seo copy 4'
 import StockholmSEO from './components/seo copy 5'
 import WebsiteDevelopment from './components/websiteDevelopment'
 import Blogs from './components/blogs'
+import AgenticAIBlog from './components/agneticAIBLOG'
 
 const App = () => {
   console.clear()
@@ -243,6 +244,7 @@ const App = () => {
           <Route path='/hire-ppc-management-team-for-your-startup-company' element={<Ppc title={"Hire PPC Management Team For Your Startup Company"} description={"Seeking a reliable digital marketing company for SEO optimization, online marketing, website design, Google Ads management, Social Media, USA, UK, Australia, UAE."} />} />
 
           <Route path='/blog/white-label-seo' element={<BlogPost title={"Hire PPC Management Team For Your Startup Company"} description={"Seeking a reliable digital marketing company for SEO optimization, online marketing, website design, Google Ads management, Social Media, USA, UK, Australia, UAE."} />} />
+          <Route path='/blog/role-of-agenticai-in-making-money' element={<AgenticAIBlog title={"Hire PPC Management Team For Your Startup Company"} description={"Seeking a reliable digital marketing company for SEO optimization, online marketing, website design, Google Ads management, Social Media, USA, UK, Australia, UAE."} />} />
 
 
 
