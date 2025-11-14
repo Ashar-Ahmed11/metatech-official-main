@@ -312,3 +312,14 @@ hr{
   width: 100%;
   background-color: rgba(0,0, 0, 0.4);
 }
+
+/* SplitHero image pulse */
+@keyframes scalePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+.scale-pulse {
+  animation: scalePulse 4s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}

@@ -9,7 +9,7 @@ export default function Footer() {
                         <div class="col-sm-12 col-md-6">
                             <h2 className='h6 text-light'>ABOUT</h2>
                             <p class="text-justify">
-                            The passionate Metatech team makes stunning websites and apps. Our talented developers build dynamic websites and user-friendly apps for your business.Our SEO services improve your website's visibility and rankings in addition to development. Digital marketing boosts business growth by increasing brand awareness, organic traffic, and meaningful leads. Metatech specializes in web, app, design, SEO, and digital marketing. Consult for free!
+                            The passionate Metatech team makes stunning websites and apps. Our talented developers build dynamic websites and user-friendly apps for your business. Our SEO services improve your website's visibility and rankings in addition to development. Digital marketing boosts business growth by increasing brand awareness, organic traffic, and meaningful leads. Metatech specializes in web, app, design, SEO, and digital marketing. Consult for free!
 
                             </p>
                         </div>

@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation'
 import machinelearningimg from './coverOne.jpg'
 import machinelearningimgTwo from './coverTwo.jpg'
 // "https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60,w_1700,h_900/https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg"
-const VideoCarousal = ({ pageTitle,videoURL }) => {
+const VideoCarousal = ({ pageTitle,videoURL, imageURL }) => {
     const cdn = `https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60,w_${window.innerWidth > 750 ? '1700' : '900'},h_${window.innerWidth > 750 ? '900' : '1200'}/`
     const images = [{ img: `${cdn}https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg`, offer: 'MACHINE LEARNING', icon: 'fa-brain' },
     { icon: 'fa-android', iconTwo: 'fa-apple', img: `${cdn}https://images.alphacoders.com/102/1026345.jpg`, offer: 'APP DEVELOPMENT' },
@@ -44,7 +44,7 @@ const VideoCarousal = ({ pageTitle,videoURL }) => {
 
                             <video onPlay={()=>setVideoLoaded(true)
                             } loop autoPlay muted style={{ top: 0, objectFit: 'cover', height: "100%" }} className={`card-img-top position-absolute`} src={videoURL} alt="" />
-                            <img style={{transition:"1s all ease",top: 0, objectFit: 'cover', height: "100%",opacity:videoLoaded?0:1 }} className={`card-img-top position-absolute`} src={"https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://res.cloudinary.com/dextrzp2q/image/upload/v1738884168/dhghu9cke1tqwxnzbut4.png"} alt="" />
+                            <img style={{transition:"1s all ease",top: 0, objectFit: 'cover', height: "100%",opacity:videoLoaded?0:1 }} className={`card-img-top position-absolute`} src={`https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/${imageURL}`} alt="" />
 
 
                         </div>

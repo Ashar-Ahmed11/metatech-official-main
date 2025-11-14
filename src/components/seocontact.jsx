@@ -98,7 +98,7 @@ const SeoContact = () => {
                         <div className="col-12 col-md-6 my-2">
                             <div class="card h-100 text-center py-4" style={{ backgroundColor: 'rgba(0,0,0,0)', borderColor: '#6565ff' }}>
                                 <p className="h1 display-5 py-4">
-                                    <i style={{ color: "#6565ff" }} class="fas fa-map-marker-alt fa-2xl"></i>
+                                    <i style={{ color: "#6565ff" }} class="fa fa-map-marker fa-lg"></i>
                                 </p>
                                 <div class="card-body d-flex flex-column">
                                     <h5 style={{ color: "#6565ff" }} class="card-title display-6 fw-normal">LOCATION</h5>
@@ -113,7 +113,7 @@ const SeoContact = () => {
                             <div class="card h-100 text-center py-4" style={{ backgroundColor: 'rgba(0,0,0,0)', borderColor: '#6565ff' }}>
                                 <p className="h1 display-5 py-4">
 
-                                    <i style={{ color: "#6565ff" }} class="fas fa-phone-alt fa-2xl"></i>
+                                    <i style={{ color: "#6565ff" }} class="fa fa-phone fa-lg"></i>
                                 </p>
                                 <div class="card-body d-flex flex-column">
                                     <h5 style={{ color: "#6565ff" }} class="card-title display-6 fw-normal">PHONE</h5>
@@ -128,7 +128,7 @@ const SeoContact = () => {
                         <div className="col-12 col-md-6 my-2">
                             <div class="card h-100 text-center py-4" style={{ backgroundColor: 'rgba(0,0,0,0)', borderColor: '#6565ff' }}>
                                 <p className="h1 display-5 py-4">
-                                    <i style={{ color: "#6565ff" }} class="fas fa-map-marker-alt fa-2xl"></i>
+                                    <i style={{ color: "#6565ff" }} class="fa fa-envelope-o fa-lg"></i>
                                 </p>
                                 <div class="card-body d-flex flex-column">
                                     <h5 style={{ color: "#6565ff" }} class="card-title display-6 fw-normal">EMAIL</h5>

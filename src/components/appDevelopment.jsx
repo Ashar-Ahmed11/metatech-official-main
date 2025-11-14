@@ -13,7 +13,18 @@ import VideoCarousal from './carousal copy 2'
 import WebsiteSerivces from './websiteservices'
 import ShowcaseProjects from './projects copy'
 import WebsiteResults from './websiteresults'
-const WebsiteDevelopment = ({ title, description, showBrand }) => {
+import AppCard from './appCard'
+import gymLogo from './gymLogo.jpeg'
+import SplitHero from './splitHero'
+import zestyLogo from './zestyLogo.jpeg'
+import AIApp from './aiApp.png'
+import todoistIcon from './todoistIcon.png'
+import flashLogo from './flashLogo.jpeg'
+import boltManager from './boltManager.webp'
+import ecoinLogo from './ecoin.jpeg'
+import petcareLogo from './petcare.jpeg'
+import AppServices from './appServices'
+const AppDevelopment = ({ title, description, showBrand }) => {
     const navigate = useNavigate();
     const [specs, setSpecs] = useState({})
 
@@ -117,16 +128,16 @@ const WebsiteDevelopment = ({ title, description, showBrand }) => {
             <div>
                 <MetaDecorator showBrand={showBrand} title={title} description={description} imageUrl={"https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://res.cloudinary.com/dextrzp2q/image/upload/v1720097625/ob14j2kfdbjqq5te5tbn.png"} />
                 {/* <ContactCarousal pageTitle={title} /> */}
-                <VideoCarousal imageURL={"https://res.cloudinary.com/dextrzp2q/image/upload/v1738884168/dhghu9cke1tqwxnzbut4.png"} pageTitle={title} videoURL={`https://res.cloudinary.com/dextrzp2q/video/fetch/c_scale/f_auto/q_60/https://res.cloudinary.com/dextrzp2q/video/upload/v1738883551/tyvkehjuvi0btrw6vkmf.mp4`} />
+                <VideoCarousal imageURL={"https://res.cloudinary.com/dextrzp2q/image/upload/v1763036949/img_d2w5td.png"} pageTitle={title} videoURL={`https://res.cloudinary.com/dextrzp2q/video/fetch/c_scale/f_auto/q_60/https://res.cloudinary.com/dextrzp2q/video/upload/v1763032154/androiddev_fnlblt.mp4`} />
 
                 <div style={{ backgroundColor: '#151619' }}>
                     <div className="container-fluid py-5">
                         <div className="container">
                             {/* <h1 className='pb-3 h5' style={{ textDecoration: 'underline', textUnderlineOffset: "6px", color: '#6565ff' }}>SEO Solutions To Solve Your Problems</h1>
                          */}
-                            <h3 style={{ color: "white" }} className="display-4 fw-bold">Invest in Your Future with a Results-oriented Website Development Company</h3>
-                            <p style={{ color: "white" }} className="lead">We have been providing top-tier Website Development services to businesses that are seeking a strong online presence, increased engagement, and increased conversions at competitive prices for more than a decade. Our proficiency in the development of scalable, secure, and rapid websites has facilitated the attainment of numerous clients' digital objectives.</p>
-                           
+                            <h3 style={{ color: "white" }} className="display-4 fw-bold">Empower Your Business with Expert App Development Solutions                            </h3>
+                            <p style={{ color: "white" }} className="lead">As a leading Mobile App Development Company in Pakistan, we have spent over a decade developing mobile applications that are powerful and user-focused. Our app development company delivers solutions that help businesses strengthen their digital presence, boost engagement, and drive higher conversions—all at competitive prices. With our expertise in app development, we build scalable, secure, and high-performance applications that empower clients to achieve long-lasting success in the digital landscape.</p>
+
 
                             <form onSubmit={(e) => { e.preventDefault(); navigate('/seo-contact'); window.scrollTo({ behavior: 'smooth', top: 0, left: 0 }) }}>
                                 <div className='d-flex py-3 mt-3'>
@@ -151,16 +162,96 @@ const WebsiteDevelopment = ({ title, description, showBrand }) => {
                         <h2 style={{ color: "white" }}>Why Choose Metatech For Your Business Website Development?</h2>
                         <p style={{ color: "white" }} className="lead">For 100% results, we improve your search engine listing using organic SEO. Naturally, achieve better ranks to generate traffic and exposure for long-lasting success. Just proven SEO with assured results; no shortcuts! We focus on optimizing your search engine listing using natural SEO methods for assured results. Get better rankings and generate consistent traffic for development and long-lasting presence. Depend on tried-and-true techniques for long-term success without resorting to short cuts; only successful plans with actual results.</p>
                             </div> */}
-                            <WebsiteResults />
-                        <ShowcaseProjects />
-                        <WebsiteSerivces />
+                        <WebsiteResults />
+
+
+                        <SplitHero />
+
+
+                        <div className="text-center">
+                            <h2 className='pb-3 h5' style={{ textDecoration: 'underline', textUnderlineOffset: "6px", color: '#6565ff' }}>RECENT PROJECTS</h2>
+                        </div>
+                        <div className="container my-4">
+                            <div className="row">
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://drive.google.com/file/d/1e5hDwK-Pv9TbnJYDp-2lUV1H7BQ81Nzn/view?usp=drive_link"}
+                                        logo={zestyLogo}
+                                        title={"Zesty"}
+                                        type={"Food Delivery"}
+                                    />
+                                </div>
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://drive.google.com/file/d/1CR_Qm8Yg9PRuk01TIVuBhkyt8gYS9SNM/view?usp=sharing"}
+                                        logo={todoistIcon}
+                                        title={"Todoist"}
+                                        type={"Note Taking"}
+                                    />
+                                </div>
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://drive.google.com/file/d/1yTyNDsJeq08a29FUsDBCcaZ0Dqhy0t35/view?usp=sharing"}
+                                        logo={AIApp}
+                                        title={"복지야"}
+                                        type={"Conversational AI Welfare"}
+                                    />
+                                </div>
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://play.google.com/store/apps/details?id=com.gymlife.nicolaeusebi.gymlife&hl=en"}
+                                        logo={gymLogo}
+                                        title={"Gym Life"}
+                                        type={"Workout Planner"}
+                                    />
+                                </div>
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://play.google.com/store/apps/details?id=com.mjsdelivery.customer"}
+                                        logo={flashLogo}
+                                        title={"Flash"}
+                                        type={"Drinks & Groceries"}
+                                    />
+                                </div>
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://play.google.com/store/apps/details?id=com.flashdelivery.manager"}
+                                        logo={boltManager}
+                                        title={"Bolt Manager"}
+                                        type={"Flash Management"}
+                                    />
+                                </div>
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://play.google.com/store/apps/details?id=io.notepet"}
+                                        logo={petcareLogo}
+                                        title={"Notepet"}
+                                        type={"Pet Care & Medication"}
+                                    />
+                                </div>
+                                <div className="col-md-3 col-6 my-2">
+                                    <AppCard
+                                        apkFile={"https://play.google.com/store/apps/details?id=org.ecoinwallet"}
+                                        logo={ecoinLogo}
+                                        title={"ECOIN"}
+                                        type={"Crypto Multichain Wallet"}
+                                    />
+                                </div>
+
+                            </div>
+                        </div>
+                        {/* <ShowcaseProjects /> */}
+
+
+
+                        <AppServices />
 
                         <h5 className='text-center' style={{ textDecoration: 'underline', textUnderlineOffset: "6px", color: '#6565ff' }}>SEND YOUR</h5>
 
                         <div className="row justify-content-center">
                             <div className="col-12 col-md-6">
                                 <div className="d-flex justify-content-center">
-                                    <h4 style={{ color: "white" }} className="display-4 my-4 ">Free Website Creation Proposal</h4>
+                                    <h4 style={{ color: "white" }} className="display-4 my-4 ">Free App Development Proposal</h4>
                                 </div>
                                 <form onSubmit={(e) => submitMessage(e)}>
                                     <div class="">
@@ -200,4 +291,4 @@ const WebsiteDevelopment = ({ title, description, showBrand }) => {
     )
 }
 
-export default WebsiteDevelopment
+export default AppDevelopment

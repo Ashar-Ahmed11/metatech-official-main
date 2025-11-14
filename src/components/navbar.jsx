@@ -69,6 +69,9 @@ const Navbar = () => {
               <Link class="nav-link" onClick={() => window.scrollTo({ behavior: 'smooth', top: 0, left: 0 })} to="/website-development">WEBSITE DEVELOPMENT</Link>
             </li>
             <li class="nav-item mx-2">
+              <Link class="nav-link" onClick={() => window.scrollTo({ behavior: 'smooth', top: 0, left: 0 })} to="/app-development">APP DEVELOPMENT</Link>
+            </li>
+            <li class="nav-item mx-2">
               <Link class="nav-link" onClick={() => window.scrollTo({ behavior: 'smooth', top: 0, left: 0 })} to="/blogs">BLOGS</Link>
             </li>
             <li class="nav-item mx-2">

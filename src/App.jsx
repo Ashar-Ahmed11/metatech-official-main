@@ -24,6 +24,7 @@ import StockholmSEO from './components/seo copy 5'
 import WebsiteDevelopment from './components/websiteDevelopment'
 import Blogs from './components/blogs'
 import AgenticAIBlog from './components/agneticAIBLOG'
+import AppDevelopment from './components/appDevelopment'
 
 const App = () => {
   console.clear()
@@ -82,6 +83,11 @@ const App = () => {
           <Route path='/web-value-estimator' element={<CostCalculator title={"Web Value Estimator"} description={"Leading SEO and Web Development company Metatech Official helps businesses rank successfully in the world of digital technology."} />} />
           <Route path='/seo' element={<Seo title={"SEO Services"} description={"Invest in Your Future with an SEO Company that Gets Results"} />} />
           <Route path='/website-development' element={<WebsiteDevelopment title={"Website Development"} description={"Invest in Your Future with an SEO Company that Gets Results"} />} />
+
+          <Route path='/app-development' element={<AppDevelopment title={"App Development"} description={"At Metatech We build scalable, secure, and high‑speed mobile apps using modern stacks and best practices."} />} />
+         
+         
+         
           <Route path='/affordable-search-engine-ranking' element={<Seo title={"Affordable Search Engine Ranking"} description={"Leading SEO and Web Development company Metatech Official helps businesses rank successfully in the world of digital technology."} />} />
           <Route path='/wordpress-seo-services' element={<Seo title={"WordPress SEO Services"} description={"Leading SEO and Web Development company Metatech Official helps businesses rank successfully in the world of digital technology."} />} />
 
