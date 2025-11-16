@@ -47,9 +47,9 @@ const Projects = () => {
     { url: travelInn, link: 'https://travelinnislamabad.net/' },
     { url: crosswinds, link: 'https://crosswindspk.com/' },
     { url: whiteStory, link: 'https://ashar-ahmed11.github.io/WhiteStory/#/' },
+    { url: mobileInstalment, link: 'https://kamran-mobile-zone.web.app/' },
     { url: kingKong, link: 'https://ashar-ahmed11.github.io/kingkong/#/' },
     { url: glasses4u, link: 'https://glasses-4u.web.app/' },
-    { url: mobileInstalment, link: 'https://kamran-mobile-zone.web.app/' }
 
 
     // "https://images.unsplash.com/photo-1590005176489-db2e714711fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80",
