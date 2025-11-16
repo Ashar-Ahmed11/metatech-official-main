@@ -15,6 +15,15 @@ import "keen-slider/keen-slider.min.css"
 import { useState } from 'react'
 import ResizePlugin from './ResizePlugin'
 import MutationPlugin from './mutationPlugin'
+
+import msEnterprises from './ms enterprises.png'
+import memonSpices from './memon spices.png'
+import stakingdapp from './staking dapp.png'
+import travelInn from './Travel Inn Islamabad.png'
+import crosswinds from './CROSSWINDS.png'
+import whiteStory from './whitestory.png'
+import kingKong from './kingkong.png'
+
 const Projects = () => {
 
   const images = [
@@ -27,6 +36,15 @@ const Projects = () => {
     { url: stakingFocusedToken, link: 'https://www.sft.com.pk/' },
     { url: vertexChain, link: 'https://vertexchain.world/' },
     { url: MetachatPreview, link: 'https://metachatt.web.app/' }
+
+    ,
+    { url: msEnterprises, link: 'https://msenterprisespk.com/' },
+    { url: memonSpices, link: 'https://memon-foods.com/' },
+    { url: stakingdapp, link: 'https://ashar-ahmed11.github.io/ERC20-Staking-Dapp-with-Swap-Stake-USDC-Faucet/#/stake' },
+    { url: travelInn, link: 'https://travelinnislamabad.net/' },
+    { url: crosswinds, link: 'https://crosswindspk.com/' },
+    { url: whiteStory, link: 'https://ashar-ahmed11.github.io/WhiteStory/#/' },
+    { url: kingKong, link: 'https://ashar-ahmed11.github.io/kingkong/#/' }
     // "https://images.unsplash.com/photo-1590005176489-db2e714711fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80",
   ]
 
@@ -118,7 +136,7 @@ spacing:30
             <a href={src.link} target='_blank' key={idx} style={{ height: containerHeight ? containerHeight : 'auto' }} className="keen-slider__slide zoom-out__slide">
               <div>
                 {/* https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://metatech-official.co/${src.url} */}
-                <img alt="An interactive image for the preview of our one of the most recent portfolio website." onLoad={(e) => setcontainerHeight(e.target.clientHeight)} src={`https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://metatech-official.co/${src.url}`} />
+                <img alt="An interactive image for the preview of our one of the most recent portfolio website." onLoad={(e) => setcontainerHeight(e.target.clientHeight)} src={`https://res.cloudinary.com/dextrzp2q/image/fetch/f_webp/q_60/https://metatech-official.com/${src.url}`} />
               </div>
             </a>
           ))}
