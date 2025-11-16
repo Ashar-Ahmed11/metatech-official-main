@@ -14,15 +14,15 @@ import "keen-slider/keen-slider.min.css"
 import { useState } from 'react'
 import ResizePlugin from './ResizePlugin'
 import MutationPlugin from './mutationPlugin'
-import msEnterprises from './ms enterprises.png'
-import memonSpices from './memon spices.png'
-import stakingdapp from './staking dapp.png'
-import travelInn from './Travel Inn Islamabad.png'
+import msEnterprises from './msenterprises.png'
+import memonSpices from './memonspices.png'
+import stakingdapp from './stakingdapp.png'
+import travelInn from './travelisb.png'
 import crosswinds from './CROSSWINDS.png'
 import whiteStory from './whitestory.png'
 import kingKong from './kingkong.png'
-
-
+import glasses4u from './glasses4u.png'
+import mobileInstalment from './kamran.png'
 
 
 
@@ -46,7 +46,9 @@ const ShowcaseProjects = () => {
     { url: travelInn, link: 'https://travelinnislamabad.net/' },
     { url: crosswinds, link: 'https://crosswindspk.com/' },
     { url: whiteStory, link: 'https://ashar-ahmed11.github.io/WhiteStory/#/' },
-    { url: kingKong, link: 'https://ashar-ahmed11.github.io/kingkong/#/' }
+    { url: mobileInstalment, link: 'https://kamran-mobile-zone.web.app/' },
+    { url: kingKong, link: 'https://ashar-ahmed11.github.io/kingkong/#/' },
+    { url: glasses4u, link: 'https://glasses-4u.web.app/' },
     // "https://images.unsplash.com/photo-1590005176489-db2e714711fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80",
   ]
 
