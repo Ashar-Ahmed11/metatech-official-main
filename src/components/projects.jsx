@@ -27,6 +27,8 @@ import kingKong from './kingkong.png'
 
 import glasses4u from './glasses4u.png' 
 import mobileInstalment from './kamran.png'
+import lakhaniTowers from './lakhanitowers.png'
+import travelsEmbassy from './travelsembassy.png'
 const Projects = () => {
 
   const images = [
@@ -38,14 +40,14 @@ const Projects = () => {
   
     { url: stakingFocusedToken, link: 'https://www.sft.com.pk/' },
     { url: vertexChain, link: 'https://vertexchain.world/' },
-    { url: MetachatPreview, link: 'https://metachatt.web.app/' }
-
-    ,
+    { url: MetachatPreview, link: 'https://metachatt.web.app/' },
+    { url: travelsEmbassy, link: 'https://travelsembassy.com' },
     { url: msEnterprises, link: 'https://msenterprisespk.com/' },
     { url: memonSpices, link: 'https://memon-foods.com/' },
     { url: stakingdapp, link: 'https://ashar-ahmed11.github.io/ERC20-Staking-Dapp-with-Swap-Stake-USDC-Faucet/#/stake' },
     { url: travelInn, link: 'https://travelinnislamabad.net/' },
     { url: crosswinds, link: 'https://crosswindspk.com/' },
+    { url: lakhaniTowers, link: 'https://lakhani-towers.web.app/' },
     { url: whiteStory, link: 'https://ashar-ahmed11.github.io/WhiteStory/#/' },
     { url: mobileInstalment, link: 'https://kamran-mobile-zone.web.app/' },
     { url: kingKong, link: 'https://ashar-ahmed11.github.io/kingkong/#/' },

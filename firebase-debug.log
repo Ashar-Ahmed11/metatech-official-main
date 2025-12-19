@@ -1,0 +1,39 @@
+[debug] [2025-12-19T13:33:27.110Z] ----------------------------------------------------------------------
+[debug] [2025-12-19T13:33:27.114Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ashar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-12-19T13:33:27.115Z] CLI Version:   14.11.1
+[debug] [2025-12-19T13:33:27.115Z] Platform:      win32
+[debug] [2025-12-19T13:33:27.115Z] Node Version:  v22.17.1
+[debug] [2025-12-19T13:33:27.116Z] Time:          Fri Dec 19 2025 18:33:27 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-12-19T13:33:27.116Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-19T13:33:27.377Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-19T13:33:27.377Z] > authorizing via signed-in user (aliahmedqureshi8899@gmail.com)
+[debug] [2025-12-19T13:33:27.378Z] [iam] checking project metatech-official for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-12-19T13:33:27.379Z] Checked if tokens are valid: false, expires at: 1766149964396
+[debug] [2025-12-19T13:33:27.379Z] Checked if tokens are valid: false, expires at: 1766149964396
+[debug] [2025-12-19T13:33:27.379Z] > refreshing access token with scopes: []
+[debug] [2025-12-19T13:33:27.382Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-12-19T13:33:27.382Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-19T13:33:27.981Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-12-19T13:33:27.981Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-19T13:33:27.991Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/metatech-official:testIamPermissions [none]
+[debug] [2025-12-19T13:33:27.991Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/metatech-official:testIamPermissions x-goog-quota-user=projects/metatech-official
+[debug] [2025-12-19T13:33:27.991Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/metatech-official:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-12-19T13:33:29.895Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/metatech-official:testIamPermissions 200
+[debug] [2025-12-19T13:33:29.895Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/metatech-official:testIamPermissions {}
+[debug] [2025-12-19T13:33:29.895Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project metatech-official:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-12-19T13:33:29.896Z] Checked if tokens are valid: true, expires at: 1766154806981
+[debug] [2025-12-19T13:33:29.896Z] Checked if tokens are valid: true, expires at: 1766154806981
+[debug] [2025-12-19T13:33:29.897Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/metatech-official [none]
+[debug] [2025-12-19T13:33:30.798Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/metatech-official 403
+[debug] [2025-12-19T13:33:30.799Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/metatech-official {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-12-19T13:33:30.800Z] Request to https://firebase.googleapis.com/v1beta1/projects/metatech-official had HTTP Error: 403, The caller does not have permission
+[debug] [2025-12-19T13:33:31.974Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/metatech-official had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\ashar\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\ashar\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project metatech-official. Please make sure the project exists and your account has permission to access it.
