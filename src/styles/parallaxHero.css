@@ -1,0 +1,43 @@
+/* Minimal styling inspired by referenced HTML, adapted to Metatech theme */
+.mt-parallax-section {
+  position: relative;
+  overflow: hidden;
+  background: #0f0f12; /* site dark base */
+}
+.mt-parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 40vw; /* animated to 100vw on wide screens */
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed; /* create fixed parallax feel */
+  background-repeat: no-repeat;
+  will-change: transform, width;
+}
+
+@media (max-width: 990px) {
+  .mt-parallax-bg {
+    width: 100vw; /* ensure full width on small screens for consistent feel */
+    background-size: cover; /* fill viewport responsively */
+  }
+}
+.mt-parallax-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mt-parallax-title {
+  font-weight: 800;
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.1;
+}
+.mt-parallax-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+

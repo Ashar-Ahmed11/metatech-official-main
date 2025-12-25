@@ -115,7 +115,8 @@ const App = () => {
               <Route path='/website-design-cost-calculator-UK' element={<CostCalculator title={"Website Design Cost Calculator UK"} description={"Leading SEO and Web Development company Metatech Official helps businesses rank successfully in the world of digital technology."} />} />
               <Route path='/web-value-estimator' element={<CostCalculator title={"Web Value Estimator"} description={"Leading SEO and Web Development company Metatech Official helps businesses rank successfully in the world of digital technology."} />} />
               <Route path='/seo' element={<Seo title={"SEO Services"} description={"Invest in Your Future with an SEO Company that Gets Results"} />} />
-              <Route path='/website-development' element={<WebsiteDevelopment title={"Website Development"} description={"Invest in Your Future with an SEO Company that Gets Results"} />} />
+
+              <Route path='/website-development' element={<WebsiteDevelopment title={"Website Development Company"} showBrand={true} description={"The passionate Metatech Official website development company team makes stunning websites and apps. Our talented developers build dynamic websites and user-friendly apps for your business."} />} />
 
               <Route path='/app-development' element={<AppDevelopment title={"App Development"} description={"At Metatech We build scalable, secure, and high‑speed mobile apps using modern stacks and best practices."} />} />
 
